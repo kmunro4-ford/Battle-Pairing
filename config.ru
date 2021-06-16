@@ -1,7 +1,10 @@
-require 'rubygems'
-require 'bundler'
+# require 'rubygems'
+# require 'bundler'
+#
+# Bundler.require
+#
+# require './app.rb'
+# run Battle
 
-Bundler.require
-
-require './app.rb'
+require_relative "./app"
 run Battle
