@@ -7,7 +7,8 @@ class Battle < Sinatra::Base
     end
 
   get '/' do
-    erb(:game_name)
+    "Testing infrastructure working!"
+    # erb(:game_name)
   end
 
   post 'game' do
