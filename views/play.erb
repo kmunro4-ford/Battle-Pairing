@@ -1,6 +1,6 @@
-<h1>Player 1 is <%= @player1_name %> & Player 2 is <%= @player2_name %></h1>
-<h2><%= @player1_name %>'s Points = <%= @player_1_points %></h2>
-<h2><%= @player2_name %>'s Points = <%= @player_2_points %></h2>
+<h1>Player 1 is <%= @player1.name %> & Player 2 is <%= @player2.name %></h1>
+<h2><%= @player1.name %>'s Points = <%= @player1.player_points %></h2>
+<h2><%= @player2.name %>'s Points = <%= @player2.player_points %></h2>
 
 
 <form action='/attacked_player2_confirmation' method="get">
