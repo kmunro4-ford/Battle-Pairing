@@ -16,13 +16,6 @@ describe Player do
     end
   end
 
-  describe '#attack' do
-    it 'damages the player' do
-      expect(mike).to receive(:receive_damage)
-      kelvin.attack(mike)
-    end
-  end
-
   describe '#receive_damage' do
     it 'reduces the player hit points' do
       expect { kelvin.receive_damage }.to change { kelvin.player_points }.by(-10)
