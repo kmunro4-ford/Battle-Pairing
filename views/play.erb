@@ -1,3 +1,8 @@
-<h1>Player 1 is <%= @player1 %> & Player 2 is <%= @player2 %></h1>
-<h2><%= @player1 %>'s Points = <%= @player_1_points %></h2>
-<h2><%= @player2 %>'s Points = <%= @player_2_points %></h2>
+<h1>Player 1 is <%= @player1_name %> & Player 2 is <%= @player2_name %></h1>
+<h2><%= @player1_name %>'s Points = <%= @player_1_points %></h2>
+<h2><%= @player2_name %>'s Points = <%= @player_2_points %></h2>
+
+
+<form action='/attacked_player2_confirmation' method="get">
+  <input type="submit" name="" value="Attack player 2">
+</form>
