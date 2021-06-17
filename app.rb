@@ -20,7 +20,6 @@ class Battle < Sinatra::Base
   get '/play' do
     @player1 = $player1
     @player2 = $player2
-    @player1.attack(@player2)
     erb(:play)
   end
 
@@ -29,6 +28,7 @@ class Battle < Sinatra::Base
   get '/attacked_player2_confirmation' do
     @player1 = $player1
     @player2 = $player2
+    @player1.attack(@player2)
     erb(:confirm_attack_on_player2)
   end
 

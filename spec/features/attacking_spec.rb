@@ -4,8 +4,8 @@ feature 'Attacking' do
   scenario 'reduce Player 2 HP by 10' do
     sign_in_and_play
     click_button 'Attack player 2'
-    click_link 'OK'
-    expect(page).not_to have_content ': 60HP'
-    expect(page).to have_content 'Mittens: 50HP'
+    click_button 'Go Back'
+    expect(page).not_to have_content "Mike's Points = 100"
+    expect(page).to have_content "Mike's Points = 90"
   end
 end
